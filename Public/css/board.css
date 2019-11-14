@@ -1,3 +1,12 @@
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5em;
+}
+button{
+    box-shadow: none;
+    outline: none;
+}
 .container {
     display: flow-root;
 }
@@ -41,39 +50,19 @@
 }
 .menu > .logo_menu > button{
     margin: 0;
-    box-shadow: none;
     line-height: unset;
-    outline: none;
+    
 }
 .menu > .icons > button{
-    box-shadow: none;
     line-height: unset;
     font-size: 2em;
     margin: 0.5em;
-    outline: none;
-}
-
-
-.wraper > .div1 > img {
-    width: 100%;
-    height: 100%;
-    border-radius: 0.5em;
-}
-.wraper > .div2 > img {
-    width: 100%;
-    height: 100%;
-    border-radius: 0.5em;
-}
-.wraper > .div3 > img {
-    width: 100%;
-    height: 100%;
-    border-radius: 0.5em;
 }
 
 .wraper {
-    width: 65%;
+    width: 50%;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: 12% 16% 11% 27% 27%;
     grid-column-gap: 1em;
     grid-row-gap: 1em;
     margin-top: 3em;
@@ -90,28 +79,26 @@
 .div3 { grid-area: 2 / 4 / 4 / 6; }
 .div4 { grid-area: 1 / 1 / 2 / 4; }
 .div5 { grid-area: 2 / 1 / 3 / 4; }
-.div6 {
-    padding: 1em 1em 1em 1.5em; 
-}
+.div6 { padding: 1em 1em 1em 1em; }
 .div8 { 
     grid-area: 3 / 3 / 4 / 4;
-    padding: 1em 1em 1em 2em; 
+    padding: 1em 1em 1em 1.5em; 
 }
 
 .div4 > button{
     width: 100%;
     margin: 0em;
     background: none;
-    box-shadow: none;
     color:#595858 ;
     font-size: 2em;
     padding: none;
+    line-height: 2em;
 }
 .div5 > p{
     width: min-content;
     color:#595858 ;
     font-size: 1.25em;
-    margin-left: 2em;
+    margin-left: 1.2em;
 }
 .div6 > .ic > i{
     margin-right: 0.25em;
@@ -127,9 +114,7 @@
     display: flex;
 }
 .div8 > button{
-    box-shadow: none;
     margin: 0em;
-    outline: none;
     background: none;
     line-height: unset;
     padding: 0em;
@@ -188,25 +173,17 @@
     .div3 { grid-area: 2 / 3 / 3 / 4; }
     .div1 { grid-area: 3 / 3 / 4 / 4; }
     .div8 { grid-area: 4 / 3 / 5 / 4;
-    padding: 1.9em 1em 1em 2.5em; }
-    .div5{
-        visibility: hidden;
-    }
-    .div6{
-        padding: 2em 1em 1em 1em;
-    }
-    .footer > .contact{
-        display: none;
-    }
+            padding: 1.9em 1em 1em 2.5em; }
+    .div5{ visibility: hidden;}
+    .div6{ padding: 2em 1em 1em 1em;}
+    .footer > .contact{ display: none;}
     .footer >  button{
-        display: inline;
+        display: none;
         font-size: 1.6em;
-        box-shadow: none;
         margin-left: auto;
         margin-right: auto;
         margin-top: 0em;
         margin-bottom: 0em;
-        outline: none;
         visibility: visible;
     }
     
