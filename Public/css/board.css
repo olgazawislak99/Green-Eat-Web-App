@@ -3,18 +3,12 @@ img {
     height: 100%;
     border-radius: 0.5em;
 }
-button{
-    box-shadow: none;
-    outline: none;
-}
 .container {
     display: flow-root;
 }
 .menu{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    flex-direction: row;
-    justify-content: left;
     height:5em;
     align-items: center;
     margin: 0em;
@@ -22,9 +16,7 @@ button{
     background: #595858 0% 0% no-repeat padding-box;
 }
 .logo_menu{
-    width: fit-content;
     font-size: 2.75em;
-    flex-direction: row;
     font: Regular 61px/81px Segoe UI;
     color: #EEEEEE;
     margin-left:5%;
@@ -41,8 +33,6 @@ button{
     outline: none;
 }
 .icons{
-    width: fit-content;
-    flex-direction: row;
     color: #EEEEEE;
     size: 2.75em;
     margin: auto;
@@ -178,13 +168,12 @@ button{
     .div6{ padding: 2em 1em 1em 1em;}
     .footer > .contact{ display: none;}
     .footer >  button{
-        display: none;
+        display: flex;
         font-size: 1.6em;
         margin-left: auto;
         margin-right: auto;
         margin-top: 0em;
         margin-bottom: 0em;
-        visibility: visible;
     }
     
 }

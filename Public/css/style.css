@@ -35,8 +35,6 @@ form > input {
     background: transparent;
     outline: none;
 
-
-    /* font */
     color: #595858;
     line-height: 2.5em;
     font-size: 1em;
@@ -45,7 +43,8 @@ form > input {
 button {
     margin: 1em 1em 1em 1em;
     color: white;
-    box-shadow: 0px 3px 6px #00000029;
+    box-shadow: none;
+    outline: none;
     border-radius: 4px;
     border: none;
     background: #595858 0% 0% no-repeat padding-box;
