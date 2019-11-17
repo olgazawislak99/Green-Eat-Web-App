@@ -6,9 +6,9 @@
 .div9 { grid-area: 1 / 4 / 2 / 6; }
 .div1 { grid-area: 2 / 4 / 5 / 6; }
 .div2 { grid-area: 5 / 4 / 6 / 5;
-    padding: 1em 1em 1em 3em; }
+    padding: 1em 0em 1em 1.5em; }
 .div3 { grid-area: 5 / 5 / 6 / 6;
-    padding: 1em 0em 1em 7em; }
+    padding: 1em 1.5em 1em 0em; }
 .div4 { grid-area: 1 / 1 / 2 / 4; }
 .div5 { grid-area: 2 / 1 / 5 / 4; }
 .div8 { grid-area: 5 / 3 / 6 / 4; }
@@ -17,6 +17,7 @@
     background: none;
     line-height: unset;
     padding: 0em;
+    float: left;
 }
 .div2 > button > i{
     font-size: 1.75em;
@@ -28,6 +29,7 @@
     background: none;
     line-height: unset;
     padding: 0em;
+    float: right;
 }
 .div3 > button > i{
     font-size: 1.75em;
