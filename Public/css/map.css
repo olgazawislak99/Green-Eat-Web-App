@@ -6,9 +6,46 @@
 .map { grid-area: 1 / 1 / 2 / 2; }
 .board { grid-area: 1 / 2 / 2 / 3; }
 
-.map{
-    width: 80%;
-    height: 35em;
-    background: gray;
-    margin: auto auto 25em auto
+.wraper{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    gap: 0.5em;
+}
+.title{
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    margin-top: 2em;
+}
+.title >p{
+    background: none;
+    color: #595858;
+    font-size: 2em;
+}
+
+.wraper>button{
+    background: none;
+    color:  #595858;
+    margin: 0%;
+}
+
+.wraper>p{
+    color: #595858;
+    font-size: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0em;
+}
+
+@media only screen and (max-device-width: 992px){
+    .container{
+        display: flow-root;
+    }
+    .map{
+        display: none;
+    }
+    .wraper{
+        height: unset;
+    }
 }
