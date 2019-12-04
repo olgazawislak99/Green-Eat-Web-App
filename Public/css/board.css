@@ -158,7 +158,6 @@ img {
         row-gap: 0em;
         column-gap: 0em;
     }
-    .div4 { grid-area: 1 / 1 / 2 / 4; }
     .div2 { grid-area: 2 / 1 / 4 / 3; }
     .div3 { grid-area: 2 / 3 / 3 / 4; }
     .div1 { grid-area: 3 / 3 / 4 / 4; }

@@ -1,0 +1,8 @@
+.wraper{
+    display: flex;
+    width: 75%;
+}
+.wraper>button{
+    font-size: 1.7em;
+    margin: 0.5em;
+}
