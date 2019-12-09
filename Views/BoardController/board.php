@@ -27,7 +27,7 @@
     <div class="board">
         <?php foreach($posts as $post): ?>
         <div class="wraper">
-            <div class="div1"> <img src="<?= '../Public/img/'.$post->getImage1() ?>"></div>
+            <div class="div1"> <img src="<?= '../Public/img/'.$post->getImage() ?>"></div>
             <div class="div2"> <img src="<?= '../Public/img/'.$post->getImage2() ?>"></div>
             <div class="div3"> <img src="<?= '../Public/img/'.$post->getImage3() ?>"></div>
             <div class="div4"><button><?=$post->getName() ?></button> </div>

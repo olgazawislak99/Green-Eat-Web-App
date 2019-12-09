@@ -25,19 +25,20 @@
         
 </div>
 <div class="container">
+    <?php foreach($descriptions as $description): ?>
     <div class="wraper">
         <div class="div9"><p>Gallery</p> </div>
-        <div class="div1"><img src="../Public/img/images.jpg"></div>
+        <div class="div1"><img src="<?= '../Public/img/'.$description->getImage() ?>"></div>
         <div class="div2"> <button><i class="fas fa-arrow-left"></i></button></div>
         <div class="div3"> <button><i class="fas fa-arrow-right"></i></button></div>
-        <div class="div4"><p>SiSi Restaurant&Wine</p> </div>
-        <div class="div5"><p>Sissi Restaurant & Wine łączy restaurację, kawiarnię, winiarnię, a nawet piekarnię, spajając wszystko mottem „jedz i kochaj”. 
-                Wyrazem naszej miłości do jedzenia jest dbałość o naturalność i pochodzenie wszystkich składników serwowanych przez nas potraw.</p></div>
-        <div class="div6"><div class="ic"><i class="fas fa-globe-americas"></i><p>Kraków</p></div></div>
-        <div class="div6"><div class="ic"><i class="fas fa-clock"></i><p>1h ago</p></div> </div>
+        <div class="div4"><p><?=$description->getName() ?></p> </div>
+        <div class="div5"><p><?=$description->getDescription() ?></p></div>
+        <div class="div6"><div class="ic"><i class="fas fa-globe-americas"></i><p><?=$description->getPlace() ?></p></div></div>
+        <div class="div6"><div class="ic"><i class="fas fa-clock"></i><p><?=$description->getTime() ?></p></div> </div>
         <div class="div8"><button><i class="fas fa-thumbs-up"></i></button></div>
         <div class="div9"></div>
     </div>
+    <?php endforeach ?>
 </div>
 <div class="footer">
     <button class="contact"> Contact </button>

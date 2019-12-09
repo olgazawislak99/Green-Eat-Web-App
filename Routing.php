@@ -2,6 +2,7 @@
 
 require_once 'Controllers//BoardController.php';
 require_once 'Controllers//SecurityController.php';
+require_once 'Controllers//DescriptionController.php';
 
 class Routing {
     private $routes = [];
@@ -16,6 +17,10 @@ class Routing {
             'login' => [
                 'controller' => 'SecurityController',
                 'action' => 'login'
+            ],
+            'description' => [
+                'controller' => 'DescriptionController',
+                'action' => 'getDescription'
             ]
         ];
     }
