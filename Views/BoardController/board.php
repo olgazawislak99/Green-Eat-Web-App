@@ -21,7 +21,7 @@
             <button><i class="fas fa-user"></i></button>
             <button><i class="fas fa-sign-out-alt"></i></button>
     </div>
-        
+    
 </div>
 <div class="container">
     <div class="board">

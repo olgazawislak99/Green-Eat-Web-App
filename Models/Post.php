@@ -11,16 +11,16 @@ class Post {
     private $time;
 
     public function __construct(string $name, string $hashtags, string $image1, string $image2, string $image3, string $place, string $time){
-        $this->$name=$name;
-        $this->$hashtags=$hashtags;
-        $this->$image1=$image1;
-        $this->$image2=$image2;
-        $this->$image3=$image3;
-        $this->$place=$place;
-        $this->$time=$time;
+        $this->name=$name;
+        $this->hashtags=$hashtags;
+        $this->image1=$image1;
+        $this->image2=$image2;
+        $this->image3=$image3;
+        $this->place=$place;
+        $this->time=$time;
     }
   
-    public function getName()
+    public function getName(): string
     {
         return $this->name;
     }
@@ -30,7 +30,7 @@ class Post {
         return $this->hashtags;
     }
 
-    public function getImage1()
+    public function getImage1():string
     {
         return $this->image1;
     }
