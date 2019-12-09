@@ -7,7 +7,7 @@
 <body>
 <div class="container">
     <div class="logo">
-        <img src="../Public/img/Group 5.svg">
+        <img src="../Public/img/logo.svg">
     </div>
     <form>
         <input name="email" type="text" placeholder="johndoe@email.com">

@@ -25,28 +25,19 @@
 </div>
 <div class="container">
     <div class="board">
-        <!-- foreach -->
+        <?php foreach($posts as $post): ?>
         <div class="wraper">
-            <div class="div1"> <img src="../Public/img/images.jpg"></div>
-            <div class="div2"> <img src="../Public/img/sissi-restaurant-wine.jpg"></div>
-            <div class="div3"> <img src="../Public/img/Sissi007-860x573.jpg"></div>
-            <div class="div4"><button>Sisi Restaurant&Wine</button> </div>
-            <div class="div5"><p> #no_plastic #paper_bags #eco_straws #waste_sorting</p></div>
-            <div class="div6"><div class="ic"><i class="fas fa-globe-americas"></i><p>Kraków</p></div></div>
-            <div class="div6"><div class="ic"><i class="fas fa-clock"></i><p>1h ago</p></div> </div>
+            <div class="div1"> <img src="<?= '../Public/img/'.$post->getImage1() ?>"></div>
+            <div class="div2"> <img src="<?= '../Public/img/'.$post->getImage2() ?>"></div>
+            <div class="div3"> <img src="<?= '../Public/img/'.$post->getImage3() ?>"></div>
+            <div class="div4"><button><?=$post->getName() ?></button> </div>
+            <div class="div5"><p><?=$post->getHashtags() ?></p></div>
+            <div class="div6"><div class="ic"><i class="fas fa-globe-americas"></i><p><?=$post->getPlace() ?></p></div></div>
+            <div class="div6"><div class="ic"><i class="fas fa-clock"></i><p><?=$post->getTime() ?></p></div> </div>
             <div class="div8"><button><i class="fas fa-thumbs-up"></i></button></div>
         </div>
-        <div class="wraper">
-            <div class="div1"> <img src="../Public/img/images.jpg"></div>
-            <div class="div2"> <img src="../Public/img/sissi-restaurant-wine.jpg"></div>
-            <div class="div3"> <img src="../Public/img/Sissi007-860x573.jpg"></div>
-            <div class="div4"><button>Sisi Restaurant&Wine</button> </div>
-            <div class="div5"><p> #no_plastic #paper_bags #eco_straws #waste_sorting</p></div>
-            <div class="div6"><div class="ic"><i class="fas fa-globe-americas"></i><p>Kraków</p></div></div>
-            <div class="div6"><div class="ic"><i class="fas fa-clock"></i><p>1h ago</p></div> </div>
-            <div class="div8"><button><i class="fas fa-thumbs-up"></i></button></div>
-        </div>
-    
+        <?php endforeach ?>
+        
     </div>
 </div>
 <div class="footer">
