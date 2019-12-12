@@ -1,6 +1,6 @@
 <div class="menu">
     <div class="logo_menu">
-           <button> green<b>eat</b></button>
+           <a href="/?page=board"> green<b>eat</b></a>
     </div>
     <div class="search">
             <input name="search" type="text" placeholder="search">

@@ -1,3 +1,12 @@
+<?php
+    if(!isset($_SESSION['id']) and !isset($_SESSION['role'])) {
+        die('You are not logged in!');
+    }
+
+    if(!in_array('ROLE_USER', $_SESSION['role'])) {
+        die('You do not have permission to watch this page!');
+    }
+?>
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
@@ -19,7 +28,7 @@
             <div class="div1"> <img src="<?= '../Public/img/'.$post->getImage() ?>"></div>
             <div class="div2"> <img src="<?= '../Public/img/'.$post->getImage2() ?>"></div>
             <div class="div3"> <img src="<?= '../Public/img/'.$post->getImage3() ?>"></div>
-            <div class="div4"><button><?=$post->getName() ?></button> </div>
+            <div class="div4"><a href="/?page=description"><?=$post->getName() ?></a> </div>
             <div class="div5"><p><?=$post->getHashtags() ?></p></div>
             <div class="div6"><div class="ic"><i class="fas fa-globe-americas"></i><p><?=$post->getPlace() ?></p></div></div>
             <div class="div6"><div class="ic"><i class="fas fa-clock"></i><p><?=$post->getTime() ?></p></div> </div>

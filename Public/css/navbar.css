@@ -7,12 +7,14 @@
     max-width: unset;
     background: #595858 0% 0% no-repeat padding-box;
 }
-.logo_menu{
+.logo_menu>a{
     font-size: 2.75em;
     font: Regular 61px/81px Segoe UI;
     color: #EEEEEE;
     margin-left:5%;
     padding-bottom: 5px;
+    text-decoration: none;
+    
 }
 .search > input{
     height: 2.75em;

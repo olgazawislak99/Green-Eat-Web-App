@@ -32,7 +32,7 @@ img {
     padding: 1em 1em 1em 1.5em; 
 }
 
-.div4 > button{
+.div4 > a{
     width: 100%;
     margin: 0em;
     background: none;
@@ -40,6 +40,8 @@ img {
     font-size: 2em;
     padding: none;
     line-height: 2em;
+    text-decoration: none;
+    background: none;
 }
 .div5 > p{
     width: min-content;
