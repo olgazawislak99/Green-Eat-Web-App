@@ -37,7 +37,8 @@
     line-height: unset;
     
 }
-.menu > .icons > button{
+.menu > .icons > a{
+    color: #EEEEEE;
     line-height: unset;
     font-size: 2em;
     margin: 0.5em;
