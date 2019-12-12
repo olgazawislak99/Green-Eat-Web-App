@@ -1,0 +1,53 @@
+.menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height:5em;
+    align-items: center;
+    margin: 0em;
+    max-width: unset;
+    background: #595858 0% 0% no-repeat padding-box;
+}
+.logo_menu{
+    font-size: 2.75em;
+    font: Regular 61px/81px Segoe UI;
+    color: #EEEEEE;
+    margin-left:5%;
+    padding-bottom: 5px;
+}
+.search > input{
+    height: 2.75em;
+    width: 100%;
+    font: Regular 61px/81px Segoe UI;
+    border: none;
+    padding-left: 1em;
+    background: #EEEEEE 0% 0% no-repeat padding-box;
+    border-radius: 24px;
+    outline: none;
+}
+.icons{
+    color: #EEEEEE;
+    size: 2.75em;
+    margin: auto;
+    margin-right: 1em;
+}
+.menu > .logo_menu > button{
+    margin: 0;
+    line-height: unset;
+    
+}
+.menu > .icons > button{
+    line-height: unset;
+    font-size: 2em;
+    margin: 0.5em;
+}
+@media only screen and (max-device-width: 992px){
+    .menu{
+        grid-template-columns: 1fr;
+    }
+    .menu > .search{
+        visibility: hidden;
+    }
+    .menu > .icons{
+        visibility: hidden;
+    }
+}

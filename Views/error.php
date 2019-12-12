@@ -6,25 +6,14 @@
     <link rel="Stylesheet" type="text/css" href="../Public/css/board.css" />
     <link rel="Stylesheet" type="text/css" href="../Public/css/map.css"/>
     <link rel="Stylesheet" type="text/css" href="../Public/css/error.css"/>
+    <link rel="Stylesheet" type="text/css" href="../Public/css/navbar.css" />
+    <link rel="Stylesheet" type="text/css" href="../Public/css/footer.css" />
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/257efb6abb.js" crossorigin="anonymous"></script>
     <title>greeneat</title>
 </head>
 <body>
-<div class="menu">
-    <div class="logo_menu">
-           <button> green<b>eat</b></button>
-    </div>
-    <div class="search">
-            <input name="search" type="text" placeholder="search">
-    </div>
-    <div class="icons">
-            <button><i class="fas fa-map-marker-alt"></i></button>
-            <button><i class="fas fa-user"></i></button>
-            <button><i class="fas fa-sign-out-alt"></i></button>
-    </div>
-        
-</div>
+<?php include(dirname(__DIR__).'/Common/navbar.php'); ?>
 <div class="container">
     <div class="title">
         <p>Nearest eco places!</p>
@@ -33,13 +22,6 @@
         Thre's no eco places near you! Sorry...
     </p>
 </div>
-
-
-<div class="footer">
-    <button class="contact"> Contact </button>
-    <button><i class="fas fa-map-marker-alt"></i></button>
-    <button><i class="fas fa-user"></i></button>
-    <button><i class="fas fa-sign-out-alt"></i></button>      
-</div>
+<?php include(dirname(__DIR__).'/Common/footer.php'); ?>
 </body>
 </html>

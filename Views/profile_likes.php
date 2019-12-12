@@ -7,25 +7,14 @@
     <link rel="Stylesheet" type="text/css" href="../Public/css/map.css"/>
     <link rel="Stylesheet" type="text/css" href="../Public/css/profile_settings.css"/>
     <link rel="Stylesheet" type="text/css" href="../Public/css/profile_likes.css"/>
+    <link rel="Stylesheet" type="text/css" href="../Public/css/navbar.css" />
+    <link rel="Stylesheet" type="text/css" href="../Public/css/footer.css" />
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/257efb6abb.js" crossorigin="anonymous"></script>
     <title>greeneat</title>
 </head>
 <body>
-<div class="menu">
-    <div class="logo_menu">
-           <button> green<b>eat</b></button>
-    </div>
-    <div class="search">
-            <input name="search" type="text" placeholder="search">
-    </div>
-    <div class="icons">
-            <button><i class="fas fa-map-marker-alt"></i></button>
-            <button><i class="fas fa-user"></i></button>
-            <button><i class="fas fa-sign-out-alt"></i></button>
-    </div>
-        
-</div>
+<?php include(dirname(__DIR__).'/Common/navbar.php'); ?>
 <div class="container">
     <div class="profile">
         <img src="../Public/img/profile_pic.png">
@@ -50,15 +39,8 @@
             <button>Sisi Restaurant&Wine</button>
             <button><i class="fas fa-thumbs-down"></i></button>
         </div>
-        
-    
     </div>
 </div>
-<div class="footer">
-    <button class="contact"> Contact </button>
-    <button><i class="fas fa-map-marker-alt"></i></button>
-    <button><i class="fas fa-user"></i></button>
-    <button><i class="fas fa-sign-out-alt"></i></button>      
-</div>
+<?php include(dirname(__DIR__).'/Common/footer.php'); ?>
 </body>
 </html>
