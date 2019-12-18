@@ -7,7 +7,7 @@
     </div>
     <div class="icons">
             <a><i class="fas fa-map-marker-alt"></i></a>
-            <a><i class="fas fa-user"></i></a>
+            <a href="?page=profile_likes"><i class="fas fa-user"></i></a>
             <a href="?page=logout"><i class="fas fa-sign-out-alt"></i></a>
     </div>
     

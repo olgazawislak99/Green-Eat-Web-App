@@ -16,13 +16,16 @@
 <body>
 <?php include(dirname(__DIR__).'/Common/navbar.php'); ?>
 <div class="container">
+    <?php foreach($users as $user): ?>
     <div class="profile">
         <img src="../Public/img/profile_pic.png">
-        <p>John Doe</p>
-        <p>johndoe@email.com</p>
+        <p><?=$user->getName() ?> <?=$user->getSurname() ?></p>
+        <p><?= $user->getEmail()?></p>
         <button>140 LIKED</button>
-        <button><i class="fas fa-cog"></i><p>settings</p></button></button>
+        <a href="/?page=profile_settings"><i class="fas fa-cog"></i><p>settings</p></a>
     </div>
+    <?php endforeach ?>
+    
     <div class="board">
         <div class="title">
             <p>Your favourite places:</p>

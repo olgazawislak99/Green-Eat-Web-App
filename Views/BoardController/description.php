@@ -24,7 +24,7 @@
         <div class="div5"><p><?=$description->getDescription() ?></p></div>
         <div class="div6"><div class="ic"><i class="fas fa-globe-americas"></i><p><?=$description->getPlace() ?></p></div></div>
         <div class="div6"><div class="ic"><i class="fas fa-clock"></i><p><?=$description->getTime() ?></p></div> </div>
-        <div class="div8"><button><i class="fas fa-thumbs-up"></i></button></div>
+        <div class="div8"><button><i class="fas fa-thumbs-up"><p><?=$description->getLikes() ?></p></i></button></div>
         <div class="div9"></div>
     </div>
     <?php endforeach ?>

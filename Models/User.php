@@ -19,6 +19,14 @@ class User {
         $this->surname = $surname;
     }
 
+    public function getName(): string{
+        return $this->name;
+    }
+
+    public function getSurname(): string{
+        return $this->surname;
+    }
+    
     public function getEmail(): string 
     {
         return $this->email;

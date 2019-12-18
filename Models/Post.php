@@ -7,8 +7,8 @@ class Post extends BasePost{
     private $image2;
     private $image3;
 
-    public function __construct(string $name, string $hashtags, string $image, string $image2, string $image3, string $place, string $time){
-        parent::__construct($name,$image,$place,$time);
+    public function __construct(string $name, string $hashtags, string $image, string $image2, string $image3, string $place, string $time, int $likes){
+        parent::__construct($name,$image,$place,$time,$likes);
         $this->hashtags=$hashtags;
         $this->image2=$image2;
         $this->image3=$image3;
