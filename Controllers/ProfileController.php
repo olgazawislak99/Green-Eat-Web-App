@@ -10,7 +10,7 @@ class ProfileController extends AppController {
         $user = new User('johnny@pk.edu.pl', 'admin', 'Johnny', 'Snow');
 
         $data= [$user];
-        $this->render('profile_likes', ['users' => $data]);
+        $this->render('profile_likes', ['users' => 'data']);
     }
 
     public function getLikes()
