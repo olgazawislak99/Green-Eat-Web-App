@@ -14,9 +14,10 @@ class PostRepository extends Repository {
         p.idRestaurant=r.idRestaurant
         inner join Address as a on 
         r.idAddress=a.idAddress
+        Where RestaurantName = :RestaurantName
         
         ');
-        $stmt->bindParam(':name', $name, PDO::PARAM_STR);
+        $stmt->bindParam(':RestaurantName', $name, PDO::PARAM_STR);
         $stmt->execute();
 
         $post = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -26,11 +27,11 @@ class PostRepository extends Repository {
         }
 
         return new Post(
-            $post['Restaurantname'],
+            $post['RestaurantName'],
             $post['RestaurantHashtags'],
-            $post['RestaurantImage1'],
-            $post['RestaurantImage2'],
-            $post['Restaurantcol'],
+            $post['Image1'],
+            $post['Image2'],
+            $post['Image3'],
             $post['AddressCity'],
             $post['date'],
             $post['RestaurantDescription']
@@ -52,12 +53,13 @@ class PostRepository extends Repository {
         $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
         foreach ($posts as $post) {
+            
             $result[] = new Post(
                 $post['RestaurantName'],
                 $post['RestaurantHashtags'],
-                $post['RestaurantImage1'],
-                $post['RestaurantImage2'],
-                $post['Restaurantcol'],
+                $post['Image1'],
+                $post['Image2'],
+                $post['Image3'],
                 $post['AddressCity'],
                 $post['date'],
                 $post['RestaurantDescription']

@@ -16,9 +16,11 @@ class BoardController extends AppController {
 
     public function getDescription()
     {   
-        
-        
-        $data = [$desc1];
-        $this->render('description', ['descriptions' => $data]);
+        $name = $_GET["name"];
+        $postRepository = new PostRepository();
+
+        $data = $postRepository->getPost($name);
+
+        $this->render('description', ['post' => $data]);
     }
 }

@@ -14,20 +14,18 @@
 <body>
 <?php include(dirname(__DIR__).'/Common/navbar.php'); ?>
 <div class="container">
-    <?php foreach($descriptions as $description): ?>
     <div class="wraper">
         <div class="div9"><p>Gallery</p> </div>
-        <div class="div1"><img src="<?= '../Public/img/'.$description->getImage() ?>"></div>
+        <div class="div1"><img src="<?= '../Public/img/'.$post->getImage() ?>"></div>
         <div class="div2"> <button><i class="fas fa-arrow-left"></i></button></div>
         <div class="div3"> <button><i class="fas fa-arrow-right"></i></button></div>
-        <div class="div4"><p><?=$description->getName() ?></p> </div>
-        <div class="div5"><p><?=$description->getDescription() ?></p></div>
-        <div class="div6"><div class="ic"><i class="fas fa-globe-americas"></i><p><?=$description->getPlace() ?></p></div></div>
-        <div class="div6"><div class="ic"><i class="fas fa-clock"></i><p><?=$description->getTime() ?></p></div> </div>
-        <div class="div8"><button><i class="fas fa-thumbs-up"><p><?=$description->getLikes() ?></p></i></button></div>
+        <div class="div4"><p><?=$post->getName() ?></p> </div>
+        <div class="div5"><p><?=$post->getDescription() ?></p></div>
+        <div class="div6"><div class="ic"><i class="fas fa-globe-americas"></i><p><?=$post->getPlace() ?></p></div></div>
+        <div class="div6"><div class="ic"><i class="fas fa-clock"></i><p><?=$post->getTime() ?></p></div> </div>
+        <div class="div8"><button><i class="fas fa-thumbs-up"><p><?=$post->getLikes() ?></p></i></button></div>
         <div class="div9"></div>
     </div>
-    <?php endforeach ?>
 </div>
 <?php include(dirname(__DIR__).'/Common/footer.php'); ?>
 </body>
