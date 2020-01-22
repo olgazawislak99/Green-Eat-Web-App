@@ -1,6 +1,7 @@
 .wraper{
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     width:70%;
+    height: auto;
 }
 
 .wraper>p{

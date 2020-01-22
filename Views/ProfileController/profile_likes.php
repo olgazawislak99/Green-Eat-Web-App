@@ -29,7 +29,7 @@
         <img src="../Public/img/profile_pic.png">
         <p><?=$user->getName() ?> <?=$user->getSurname() ?></p>
         <p><?= $user->getEmail()?></p>
-        <button>140 LIKED</button>
+        <a href="/?page=profile_likes"><p>140 LIKED</p></a>
         <a href="/?page=profile_settings"><p>settings</p></a>
     </div>
     
@@ -38,16 +38,7 @@
             <p>Your favourite places:</p>
         </div>
         <div class="wraper">
-            <button>Sisi Restaurant&Wine</button>
-            <button><i class="fas fa-thumbs-down"></i></button>
-        </div>
-        <div class="wraper">
-            <button>Sisi Restaurant&Wine</button>
-            <button><i class="fas fa-thumbs-down"></i></button>
-        </div>
-        <div class="wraper">
-            <button>Sisi Restaurant&Wine</button>
-            <button><i class="fas fa-thumbs-down"></i></button>
+            <a href="/?page=description&amp;name='Sissi Restaurant Wine'">Sissi Restaurant Wine</a></div>
         </div>
     </div>
 </div>

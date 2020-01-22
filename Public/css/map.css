@@ -6,7 +6,13 @@ body{
     grid-template-columns: 1fr 1fr;
 }
 
-.map { grid-area: 1 / 1 / 2 / 2; }
+#map{
+   height: 70%;
+   width: 80%;
+   margin: 3em;
+   margin-bottom: 7em;
+
+}
 .board { grid-area: 1 / 2 / 2 / 3; }
 a{
     width: unset;

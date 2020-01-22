@@ -6,7 +6,7 @@ require_once __DIR__.'//..//Repository//UserRepository.php';
 
 class ProfileController extends AppController {
 
-    public function getProfileData()
+    public function getProfileLikes()
     {   
         $email= $_SESSION["id"];
         $userRepository = new UserRepository();
@@ -14,19 +14,15 @@ class ProfileController extends AppController {
         $this->render('profile_likes', ['user' => $user]);
     }
 
-    public function getLikes()
-    {   
-        $desc1 = new Description("Sisi Restaurant&Wine", 'jhfgweygfewyfgiwyegf', 'sisi1.jpg', 'Kraków', '1h ago');
+    public function getLiked(){
         
-        $data = [$desc1];
-        $this->render('description', ['descriptions' => $data]);
     }
-    
-    public function getSettings()
+
+    public function getProfileSettings()
     {   
-        $desc1 = new Description("Sisi Restaurant&Wine", 'jhfgweygfewyfgiwyegf', 'sisi1.jpg', 'Kraków', '1h ago');
-        
-        $data = [$desc1];
-        $this->render('description', ['descriptions' => $data]);
+        $email= $_SESSION["id"];
+        $userRepository = new UserRepository();
+        $user = $userRepository->getUser($email);
+        $this->render('profile_settings', ['user' => $user]);
     }
 }

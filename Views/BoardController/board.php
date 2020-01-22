@@ -32,7 +32,7 @@
             <div class="div5"><p><?=$post->getHashtags() ?></p></div>
             <div class="div6"><div class="ic"><i class="fas fa-globe-americas"></i><p><?=$post->getPlace() ?></p></div></div>
             <div class="div6"><div class="ic"><i class="fas fa-clock"></i><p><?=$post->getTime() ?></p></div> </div>
-            <div class="div8"><button><i class="fas fa-thumbs-up"></i></button></div>
+            <div class="div8"><button onclick="addLike()"><i class="fas fa-thumbs-up"></i></button></div>
         </div>
         <?php endforeach?>
         
@@ -46,6 +46,7 @@
             icon.style.color = icon.style.color ? null : 'green';
         })
     })
+
 
 
 </script>

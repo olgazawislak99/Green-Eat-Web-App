@@ -33,7 +33,11 @@ class Routing {
             ],
             'profile_likes' => [
                 'controller' => 'ProfileController',
-                'action' => 'getProfileData'
+                'action' => 'getProfileLikes'
+            ],
+            'profile_settings' => [
+                'controller' => 'ProfileController',
+                'action' => 'getProfileSettings'
             ]
         ];
     }

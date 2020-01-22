@@ -20,7 +20,6 @@ class BoardController extends AppController {
         $postRepository = new PostRepository();
 
         $data = $postRepository->getPost($name);
-
         $this->render('description', ['post' => $data]);
     }
 }

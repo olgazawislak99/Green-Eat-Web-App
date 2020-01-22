@@ -10,7 +10,8 @@ img {
     display: flow-root;
 }
 .wraper {
-    width: 50%;
+    width: 60%;
+    height: auto;
     display: grid;
     grid-template-columns: 12% 16% 11% 27% 27%;
     grid-column-gap: 1em;

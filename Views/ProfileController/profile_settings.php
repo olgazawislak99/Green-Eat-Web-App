@@ -17,10 +17,10 @@
 <div class="container">
     <div class="profile">
         <img src="../Public/img/profile_pic.png">
-        <p>John Doe</p>
-        <p>johndoe@email.com</p>
-        <button>140 LIKED</button>
-        <button><i class="fas fa-cog"></i><p>settings</p></button></button>
+        <p><?=$user->getName() ?> <?=$user->getSurname() ?></p>
+        <p><?= $user->getEmail()?></p>
+        <a href="/?page=profile_likes"><p>140 LIKED</p></a>
+        <a href="/?page=profile_settings"><p>settings</p></a>
     </div>
     <div class="board">
         <div class="title">
