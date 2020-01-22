@@ -26,6 +26,7 @@ class UserRepository extends Repository {
             $user['surname']
         );
     }
+    
 
     public function getUsers(): array {
         $result = [];

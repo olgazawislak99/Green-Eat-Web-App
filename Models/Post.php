@@ -59,11 +59,6 @@ class Post{
         return $this->time;
     }
 
-    public function getLikes()
-    {
-        return $this->likes;
-    }
-
     public function getDescription()
     {
         return $this->description;

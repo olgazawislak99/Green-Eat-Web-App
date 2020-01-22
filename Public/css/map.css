@@ -1,3 +1,6 @@
+body{
+    position: fixed;
+}
 .container{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -5,12 +8,25 @@
 
 .map { grid-area: 1 / 1 / 2 / 2; }
 .board { grid-area: 1 / 2 / 2 / 3; }
-
+a{
+    width: unset;
+    margin-left: auto;
+    margin-right: auto;
+    background: none;
+    color:#595858 ;
+    font-size: 2em;
+    padding: none;
+    line-height: 2em;
+    text-decoration: none;
+    background: none;
+}
 .wraper{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr;
     gap: 0.5em;
+    height: 10em;
+    width: 70%;
 }
 .title{
     margin-left: auto;

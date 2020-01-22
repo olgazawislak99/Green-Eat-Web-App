@@ -38,6 +38,17 @@
         
     </div>
 </div>
+
+<script>
+    [...document.querySelectorAll('.fa-thumbs-up')].map(item => {
+        item.addEventListener('click', (e)=> {
+            const icon = e.target;
+            icon.style.color = icon.style.color ? null : 'green';
+        })
+    })
+
+
+</script>
 <?php include(dirname(__DIR__).'/Common/footer.php'); ?>
 </body>S
 </html>

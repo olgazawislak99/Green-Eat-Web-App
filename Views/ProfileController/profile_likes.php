@@ -1,3 +1,12 @@
+<?php
+    if(!isset($_SESSION['id']) and !isset($_SESSION['role'])) {
+        die('You are not logged in!');
+    }
+
+    if(!in_array('ROLE_USER', $_SESSION['role'])) {
+        die('You do not have permission to watch this page!');
+    }
+?>
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
@@ -16,15 +25,13 @@
 <body>
 <?php include(dirname(__DIR__).'/Common/navbar.php'); ?>
 <div class="container">
-    <?php foreach($users as $user): ?>
     <div class="profile">
         <img src="../Public/img/profile_pic.png">
         <p><?=$user->getName() ?> <?=$user->getSurname() ?></p>
         <p><?= $user->getEmail()?></p>
         <button>140 LIKED</button>
-        <a href="/?page=profile_settings"><i class="fas fa-cog"></i><p>settings</p></a>
+        <a href="/?page=profile_settings"><p>settings</p></a>
     </div>
-    <?php endforeach ?>
     
     <div class="board">
         <div class="title">

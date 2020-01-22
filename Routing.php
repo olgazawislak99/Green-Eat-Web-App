@@ -3,6 +3,7 @@
 require_once 'Controllers//BoardController.php';
 require_once 'Controllers//SecurityController.php';
 require_once 'Controllers//ProfileController.php';
+require_once 'Controllers//MapController.php';
 
 class Routing {
     private $routes = [];
@@ -25,6 +26,10 @@ class Routing {
             'description' => [
                 'controller' => 'BoardController',
                 'action' => 'getDescription'
+            ],
+            'map' => [
+                'controller' => 'MapController',
+                'action' => 'getLatestPosts'
             ],
             'profile_likes' => [
                 'controller' => 'ProfileController',

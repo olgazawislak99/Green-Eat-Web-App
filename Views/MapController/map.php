@@ -20,22 +20,13 @@
         <div class="title">
             <p>Nearest eco places!</p>
         </div>
+        <?php foreach($posts as $post): ?>
         <div class="wraper">
-            <button>Sisi Restaurant&Wine</button>
+            <a href="/?page=description&amp;name=<?=$post->getName()?>"><?=$post->getName() ?></a>
             <p>330m</p>
-            <p>Krupnicza 3, Kraków</p>
+            <p><?=$post->getPlace() ?></p>
         </div>
-        <div class="wraper">
-            <button>Sisi Restaurant&Wine</button>
-            <p>330m</p>
-            <p>Krupnicza 3, Kraków</p>
-        </div>
-        <div class="wraper">
-            <button>Sisi Restaurant&Wine</button>
-            <p>330m</p>
-            <p>Krupnicza 3, Kraków</p>
-        </div>
-    
+        <?php endforeach?>
     </div>
 </div>
 <?php include(dirname(__DIR__).'/Common/footer.php'); ?>

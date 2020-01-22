@@ -1,3 +1,6 @@
+body{
+    position: fixed;
+}
 .wraper{
     width: 65%;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
